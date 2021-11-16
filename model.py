@@ -8,7 +8,3 @@ class Database:
         result = self.cur.execute(f"SELECT * FROM {type}").fetchall()
         return result
 
-
-if __name__ == '__main__':
-    db = Database('database.db')
-    print(db.find_all('Бумажная_мукулатура'))
